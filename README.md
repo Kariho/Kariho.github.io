@@ -10,7 +10,7 @@
         body {font-size: 1.1em;
         font-family: "cursive", cursive, fantasy;
         background-color: greenyellow;              
-        background-image: url(IMG20190519162815.jpg);
+        background-image: url(//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/fk-logo_9fddff.png);
             background-position: center;
             background-size: cover; 
             text-decoration-color: aliceblue;
