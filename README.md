@@ -1,6 +1,7 @@
 <!Docytpe html>
 <html>
-<head>
+
+    <head>
     
     <h1>Unknown pancake ingredients</h1>
     
@@ -19,10 +20,9 @@
             font-style: oblique;
             color: blue;
             font-weight: bolder;
-            text-align: justify;
-        }
+            text-align: justify}
     </style>
-</head>
+ </head>
  <body>
      <ul> 
     <li><del>1/2</del><ins>3/4</ins> cups recotta</li>
