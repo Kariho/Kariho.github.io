@@ -12,7 +12,7 @@
         background-color: greenyellow;              
         background-image: url(IMG20190519162815.jpg);
             background-position: center;
-                background-size: cover; 
+            background-size: cover; 
             text-decoration-color: aliceblue;
             list-style-type: decimal-leading-zero;
             text-decoration-style: dotted;
