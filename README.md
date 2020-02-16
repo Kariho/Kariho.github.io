@@ -2,7 +2,9 @@
 <html>
 
     <head>
-    
+    <meta charset="utf-8">
+        <title>Project: Event invite</title>
+     
     <h1>Unknown pancake ingredients</h1>
     
     <style>
