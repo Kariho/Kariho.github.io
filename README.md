@@ -1,67 +1,236 @@
-<!Docytpe html>
+<!DOCTYPE html>
 <html>
-
     <head>
-    <meta charset="utf-8">
-        <title>Project: Event invite</title>
+        <meta charset="utf-8">
+        <title>The AKC Page</title>
      
-    <h1>Unknown pancake ingredients</h1>
+        <style>
+            html { 
+    overflow-y: scroll;
+    -webkit-font-smoothing: antialiased; }
+
+  body {
+  	background: green; }
+            
+            #message{
+                float: right;
+                width:1000px;
+                height:100%;
+                margin:0px 0px 190px 0px;
+                text-align: start;
+            }
+
+  #main {
+     
+      float:left;
+  	height: 100px;
+  	margin: 100px,0px; }
+
+  #outer-circle {
+  	-webkit-box-shadow: 0 0 50px 10px darkgreen;
+  	-moz-box-shadow: 0 0 50px 10px darkgreen;
+  	box-shadow: 0 0 50px 20px aqua;
+  	border: 10px solid #ECEBFA;
+  	border-top-color:aqua;
+  	margin: 20% 66% auto;
+  	text-align:center;
+  	background: linear-gradient(to top,#ECEBFA,#ECEBFA,#ECEBFA,#ECEBFA);
+  	width: 220px;
+  	height: 220px;
+	
+  	-webkit-border-radius: 200px;
+  	-moz-border-radius: 200px;
+  	border-radius: 200px;
+	
+  	-webkit-animation:turning_cw 5s infinite;
+  	-moz-animation:turning_cw 5s infinite;
+  	animation:turning_cw 5s infinite;
+  	position:relative;
+  	opacity: 0.6; }
+  	
+  #outer-circle:hover {
+  	-webkit-box-shadow: 0 0 100px 15px darkgreen;
+  	-moz-box-shadow: 0 0 100px 15px darkgreen;
+  	box-shadow: 0 0 1000px 150px green; 
+            
+      animation:turning_acw 31s infinite;
+            
+            }
+  	
+  #inner-circle {
+  	border: 10px solid #ECEBFA;
+  	border-left-color:aqua;
+  	border-right-color:yellow;
+	
+  	-webkit-transform: rotate(360deg);
+  	-moz-transform: rotate(360deg);
+  	transform: rotate(360deg);
+	
+  	position:absolute;
+	
+  	background: -webkit-linear-gradient(top, #ecebfa 48%, darkgreen 49%, darkgreen 51%, #ECEBFA 52%);
+  	background: -moz-linear-gradient(top, #ecebfa 48%, darkgreen 49%, darkgreen 51%, #ECEBFA 52%);
+  	background: linear-gradient(to top, red 48%, darkgreen 49%, darkgreen 51%, red 52%);
+	
+  	margin: 10px;
+  	width: 180px;
+  	height: 180px;
+	
+  	-webkit-border-radius: 180px;
+  	-moz-border-radius: 180px;
+  	border-radius: 180px;
+	
+  	-webkit-animation:turning_acw 3s infinite;
+  	-moz-animation:turning_acw 3s infinite;
+  	animation:turning_acw 3s infinite; }
+            
+
+  #center-circle {
+  	border: 10px solid aqua;
+  	border-bottom-color:Yellow   ;
+  	-webkit-transform: rotate(360deg); 
+  	-moz-transform: rotate(360deg); 
+  	transform: rotate(360deg); 
+  	position:absolute;
+
+  	background: -webkit-linear-gradient(top, #fff 48%, #ECEBFA 49%, #ECEBFA 51%, #fff 52%);
+  	background: -moz-linear-gradient(top, #fff 48%, #ECEBFA 49%, #ECEBFA 51%, #fff 52%);
+  	background: linear-gradient(to bottom, #fff 48%, #ECEBFA 49%, #ECEBFA 51%, #fff 52%);
+	
+  	margin: 10px;
+  	width: 140px;
+  	height: 140px;
+	
+  	-webkit-border-radius: 140px;
+  	-moz-border-radius: 140px;
+  	border-radius: 140px;
+	
+  	-webkit-animation:turning_cw 5s infinite;
+  	-moz-animation:turning_cw 5s infinite;
+  	animation:turning_cw 5s infinite; }
+
+  #content {
+  	position:absolute;
+  	top: 10px;
+  	left: 10px;
+  	width: 120px;
+  	height: 120px;
+  	-webkit-border-radius: 140px;
+  	-moz-border-radius: 140px;
+  	border-radius: 140px;
+  	background: orange; 
+  	text-align:center;
+  	line-height: 120px;
+  	font-size: 40px;
+  	color:clear;
+  	text-shadow: 0 2px 2px #000;
+  	font-weight:bold; }
+  @keyframes aura {
+  	0%{
+  		text-shadow: 0 2px 2px #000; }
+  		
+  	50%{
+  		text-shadow: 0 10px 10px #000;
+  		line-height: 190px; }
+  		
+  	100%{
+  		text-shadow: 0 2px 10px #000; }
+  }
+
+  @keyframes turning_cw {
+  	0%{
+  		transform: rotate(0deg); }
+  	50%{
+  		transform: rotate(12deg); }
+      75%{
+  		transform: rotate(240deg); }
+      100%{
+  		transform: rotate(360deg); }
+      
+  }
+  
+  @keyframes turning_acw {
+  	0%{
+  		transform: rotate(360deg); }
+  	100%{
+  		transform: rotate(0deg); }
+  }
+            
+            body {
+                background-image:url( IMG20190519164005.jpg);
+                background-repeat:no-repeat;
+                background-size: cover;
+                 text-align: center;
+                color: Black;
+                font-weight: bold;
+                font-size: 25px;
+                
+            
+            }
+            #date{
+                color:yellow;
+                font-weight:bold;
+                font-size: 2em;
+                
+            }
+            h1{
+                color:Red;
+                font-style:italic;
+                background-color:clear;
+                font-size: 100px;
+                font-weight: 50000px;
+                align-content: stretch;
+                text-align: center;
+            }
+            
+            #couplepic{
+                float:right;
+                margin:0px 10px 20px 3px;
+            }
+            p{background-color:clear;
+            color:orangered;
+            margin-left:1px;
+            }
+            
+            h2{
+                background:clear;
+                color:azure;
+                font-weight:200px;
+                text-align: center;
+                padding-top: 60px;
+                
+            }
+        </style>
+    </head>
+    <body>
+      <div id="container">    
+
+    <div id="main">
+      <div id="outer-circle">
+        <div id="inner-circle">
+          <div id="center-circle">
+              <div id="content" <p> <a href="https://kariho.github.io/Untitled-1.html">!AKC!</a></p></div>
+          </div>
+        </div>
+      </div>
+
     
-    <style>
+  
+  </div>
+<div id="message">
     
-        body {font-size: 1.1em;
-        font-family: "cursive", cursive, fantasy;
-        background-color: greenyellow;              
-        background-image: url(//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/fk-logo_9fddff.png);
-            background-position: center;
-            background-size: cover; 
-            text-decoration-color: aliceblue;
-            list-style-type: decimal-leading-zero;
-            text-decoration-style: dotted;
-            text-decoration-color: aqua;
-            font-style: oblique;
-            color: blue;
-            font-weight: bolder;
-            text-align: justify}
-    </style>
- </head>
- <body>
-     <ul> 
-    <li><del>1/2</del><ins>3/4</ins> cups recotta</li>
-    <li>3/4 cup pf milk</li>
-    <li>4 eggs</li>
-    <li> 1 cup plain <ins>white</ins> flour</li>
-    <li>1 teaspoon baking powder</li>
-    <li><del>75g</del><ins>50 g</ins>butter</li>
-    <li>pinch of salt</li>
-    </ul>
         
-</body>
-<div class="footnotes">
-<h2>Footnotes</h2>
-<p><span class="inventor"><strong>1</strong> The World Wide Web was
-invented by Tim Berners-Lee</span></p>
-<p><strong>2</strong> The W3C is the World Wide Web Consortium
-which maintains many Web standards</p>
-</div>
-<p>You <em>must</em> remember to close elements in HTML.</p>
-    <p><em>Always</em> look at burning magnesium through protective colored
-glass as it <strong>can cause blindness</strong>.</p>   
-    <small id="copyright">© Rob Larsen 2012</small><br>
-    This chapter is taken from <cite>Beginning Web Development</cite>
-    <p>As Dylan Thomas said, <q>Somebody's boring me. I think it's me</q>.</p>
- This book teaches you how to mark up your documents for the Web using <dfn>
-<abbr title="HyperText Markup Language">HTML</abbr></dfn>
-    
-    <time datetime="2004-10-27T20:25">On a late October night</time>, the Boston
-Red Sox played in the decisive game four of the 2004 World Series
-    The world marathon record now sits at <time datetime="2h 3m 38s">
-just over two hours</time>
-    <p> This book focuses on the latest version of the language, popularly referred
-to as <mark>HTML5</mark>. There are two other versions you might encounter.
-These are HTML 4.01, the last major versions of the language from December 1999
-and a stricter version from 2000 called XHTML (Extensible Hypertext Markup
-Language). XHTML is still very popular in some applications so important
-differences between it and <mark>HTML5</mark> will be called out in
-the text. </p>
+        <h1>You're invited!!</h1>
+        <h2>Please come to embrace "My Friend's Marriage"</h2>
+                
+        <p>My younger sister is set to marrry to her betterhalf Mr. Indi on <span id="date"> 30th Febuary.</span></p>
+        <ul>
+            <li>Please come along with all your family.</li>
+            <li> If Possible, please come a day before to enjoy all sorts of rituals.</li>
+        </ul>
+        
+        <p>Hoping to see all of you at our residence situated at 22Y, Huawei INDISTANN. on said date.</p>
+    </div>
+    </body>
+
 </html>
